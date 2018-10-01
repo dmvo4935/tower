@@ -1,0 +1,10 @@
+---
+
+- name: Get facts
+  setup:
+  register: result
+
+
+- name: Show facts
+  debug:
+   msg: "{{result.stdout}}"
