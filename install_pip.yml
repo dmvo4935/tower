@@ -1,6 +1,8 @@
+- hosts: all
+  tasks:
 
-- name: install python-pip
-  apt:
-   name: python-pip
-   state: present
-  become: yes
+  - name: install python-pip
+    apt:
+     name: python-pip
+     state: present
+    become: yes

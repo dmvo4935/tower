@@ -1,9 +1,11 @@
+---
 
-- name: Get facts
-  setup:
-  register: result
+- hosts: all 
+  tasks:
+  - name: Get facts
+    setup:
+    register: result
 
-
-- name: Show facts
-  debug:
-   msg: "{{result.stdout}}"
+  - name: Show facts
+    debug:
+     msg: "{{result.stdout}}"
