@@ -8,4 +8,4 @@
 
   - name: Show facts
     debug:
-     msg: "{{result.stdout}}"
+     msg: "{{result}}"
